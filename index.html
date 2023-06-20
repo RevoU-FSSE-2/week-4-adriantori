@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+    <link rel="stylesheet" href="Assets/Styles/index.css">
+    <link rel="stylesheet" href="Assets/Styles/navbar.css">
+    <link rel="stylesheet" href="Assets/Styles/heading.css">
+    <link rel="stylesheet" href="Assets/Styles/main.css">
+</head>
+
+<body onload="openModal()">
+
+    <nav class="navbar">
+        <ul class="noCircle">
+            <li><a href="#" onClick="activeHome()" id="home" class="navItem navActive">Home</a></li>
+            <li><a href="#warframes" onClick="activeProfile()" id="profile" class="navItem">Profile</a></li>
+            <li class="navbarIcon"><a href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.png" /></a></li>
+        </ul>
+    </nav>
+
+    <header id="header">
+        <slot id="opening">
+            <!-- Modal content -->
+            <div class="openingContent">
+              <span class="close">&times;</span>
+              <p>Welcome, <span id="visitor"></span> </p>
+            </div>
+        </slot>
+        <figure class="headerFigure">
+            <img class="imgBanner" src="/Assets/Images/banner.png" alt="warframe banner default white" />
+            <figcaption>
+                <h1 class="centering whiteText">
+                    Warframe, a space ninja 3rd shooter game
+                </h1>
+            </figcaption>
+        </figure>
+    </header>
+
+    <main class="marginMain">
+        <section id="warframes">
+            <div class="warframesContainer">
+                <div class="itemVauban centerItem bgBlack w-100">
+                </div>
+                <div class="itemVolt centerItem bgBlack w-100">2
+                </div>
+                <div class="itemTitania centerItem bgBlack w-100">3
+                </div>
+                <div class="itemExcalibur centerItem bgBlack w-100">4
+                </div>
+                <div class="itemOctavia centerItem bgBlack w-100">5
+                </figure>
+            </div>
+        </section>
+        <section id="register" class="marginContent">
+            <h3>test</h3>
+        </section>
+    </main>
+</body>
+
+<script src="Assets/Scripts/index.js"></script>
+
+</html>
