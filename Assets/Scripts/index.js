@@ -12,11 +12,17 @@ document.getElementById("visitor").innerText = visitor;
 function activeHome(){
     document.getElementById("home").className = "navItem navActive";
     document.getElementById("profile").className = "navItem";
+    document.getElementById("register").className = "navItem";
 }
 function activeProfile(){
     document.getElementById("home").className = "navItem";
     document.getElementById("profile").className = "navItem navActive";
-    
+    document.getElementById("register").className = "navItem";
+}
+function activeRegister(){
+    document.getElementById("home").className = "navItem";
+    document.getElementById("profile").className = "navItem";
+    document.getElementById("register").className = "navItem navActive";
 }
 
 function easterEgg(){

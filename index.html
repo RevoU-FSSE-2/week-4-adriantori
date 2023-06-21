@@ -15,8 +15,9 @@
 
     <nav class="navbar">
         <ul class="noCircle">
-            <li><a href="#" onClick="activeHome()" id="home" class="navItem navActive">Home</a></li>
+            <li><a href="#register" onClick="activeRegister()" id="register" class="navItem">Register</a></li>
             <li><a href="#warframes" onClick="activeProfile()" id="profile" class="navItem">Profile</a></li>
+            <li><a href="#" onClick="activeHome()" id="home" class="navItem navActive">Home</a></li>
             <li class="navbarIcon"><a href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.png" /></a></li>
         </ul>
     </nav>
@@ -30,7 +31,7 @@
             </div>
         </slot>
         <figure class="headerFigure">
-            <img class="imgBanner" src="/Assets/Images/banner.png" alt="warframe banner default white" />
+            <iframe class="imgBanner" width="100%" height="500" src="https://www.youtube.com/embed/H8RrcdwTHzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <figcaption>
                 <h1 class="centering whiteText">
                     Warframe, a space ninja 3rd shooter game
@@ -54,10 +55,52 @@
                 </figure>
             </div>
         </section>
-        <section id="register" class="marginContent">
-            <h3>test</h3>
+
+        <section id="register">
+            <div class="wrapperForm centerItem">
+                <form class="paddingContent" action="#">
+                    <fieldset class="fieldWidth">
+                        <legend>Account Information</legend>
+                        <label for="fname">Full Name</label><br>
+                        <input class="inputWidth" type="text" id="fname" name="fname" placeholder="input name"><br/>
+
+                        <label for="email">Email</label><br>
+                        <input class="inputWidth" type="email" id="email" name="email" placeholder="email address"><br/>
+                        
+                        <p class="wrapperForm">Interested in joining?</p>
+                        <input type="radio" id="yes" name="interested" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="interested" value="no">
+                        <label for="no">No</label>
+
+                    </fieldset>
+                    <fieldset class="fieldWidth">
+                        <legend>Interest</legend>
+                        <p class="wrapperForm">What makes you interested in trying out Warframe?</p>
+                        <label for="parkour">Parkour</label>
+                        <input type="checkbox" id="parkour" name="interest" value="Parkour">
+                        <label for="tps">3rd Person Shooter</label>
+                        <input type="checkbox" id="tps" name="interest" value="3rd Person Shooter">
+                        <label for="artStyle">Art Style</label>
+                        <input type="checkbox" id="artStyle" name="interest" value="artStyle">
+
+                        <p class="wrapperForm">What's your first impression of the game?</p>
+                        <textarea rows="4" class="inputWidth"></textarea>
+                        
+                        <p class="wrapperForm">Upload your avatar</p>
+                        <input type="file" id="photo" name="avatar" required="" accept="image/png, image/jpeg">
+
+                    </fieldset>
+                    <input class="btnSubmit" type="submit" value="Submit">
+                </form>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="footerContent">
+            <p>Created by Adri Antori - RevoU Week 2</p>
+        </div>
+    </footer>
 </body>
 
 <script src="Assets/Scripts/index.js"></script>
