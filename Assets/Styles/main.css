@@ -78,12 +78,6 @@ object-fit: cover;
     color:white;
 }
 
-.footerContent{
-    background-color: rgb(173, 216, 216);
-    color:black;
-    height:100%;
-}
-
 .btnSubmit{
     width:100%;
     border: 2px solid white;
