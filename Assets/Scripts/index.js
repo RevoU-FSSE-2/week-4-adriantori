@@ -5,7 +5,7 @@ let span = document.getElementsByClassName("close")[0];
 let visitor = prompt("who arth thou?");
 
 if (visitor == null || visitor == "") {
-    visitor = "Anon";
+    visitor = "Tenno";
 }
 document.getElementById("visitor").innerText = visitor;
 
@@ -48,3 +48,11 @@ function hello(){
     alert("Hello, " + visitor);
 }
 
+function activateBurger(){
+    var burgerMenu = document.getElementById("burgerMenu");
+  if (burgerMenu.style.display === "block") {
+    burgerMenu.style.display = "none";
+  } else {
+    burgerMenu.style.display = "block";
+  }
+}

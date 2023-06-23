@@ -1,0 +1,54 @@
+@media only screen and (min-width:426px){   
+    #burgerMenu{
+        display:block !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .navbarIcon {
+        height:auto;
+        display:contents;
+    }
+    .navbarIconImage{
+        width:75%;
+    }
+    .navItem{
+        width:75vw;
+    }
+    #burgerMenu{
+        display:none;
+    }
+    .burger{
+        display:inline;
+    }
+    .fieldWidth{
+        width:auto;
+    }
+    fieldset{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inputWidth{
+        width:100%;
+    }
+    .textareaWidth{
+        width:100%;
+    }
+    .imgBanner{
+        height:250px;
+    }
+    #warframes{
+        height:50vh;
+    }
+    .noCircle{
+        overflow:initial;
+        margin-right:9vw;
+    }
+    .burgerIcon{
+        display:inline;
+    }
+    #burgerMenu{
+        display:none;
+    }
+}
