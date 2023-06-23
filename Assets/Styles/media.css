@@ -14,6 +14,10 @@
     }
     .navItem{
         width:75vw;
+        float:none;
+    }
+    .navbarIcon{
+        display:none;
     }
     #burgerMenu{
         display:none;
@@ -50,5 +54,21 @@
     }
     #burgerMenu{
         display:none;
+    }
+
+    .warframesContainer{
+        display:flex;
+    }
+    .scroll-container {
+        display:flex;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 10px;
+    }
+    #warframes{
+        background-image: url("/Assets/Images/prime-access-bg.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        height:100%;
     }
 }

@@ -1,6 +1,5 @@
 #warframes{
     background-image: url("/Assets/Images/prime-access-bg.jpg");
-    height:100vh;
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -8,38 +7,46 @@
 .warframesContainer {
     display:grid;
     grid-gap: 10px;
-    height:100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 40vh 40vh auto; 
     border: 1px solid black;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+.grid-item:hover{
+    overflow:auto;
 }
 
 .itemVauban{
     grid-column: 1;
     grid-row: 1 / span 2;
     border:1px solid black;
+    overflow:hidden;
 }
 
-
 .itemVolt{
-    grid-column: 2 / span 1;
-    grid-row: 1;
     border:1px solid black;
+    overflow:hidden;
 }
 
 .itemTitania{
     border:1px solid black;
+    overflow:hidden;
 }
 
 .itemExcalibur{
     border:1px solid black;
+    overflow:hidden;
 }
 
 .itemOctavia{
-    grid-column: 3 / span 1;
-    grid-row: 2;
-}
-
-.imgItem{
-    height:7vh;
+    border:1px solid black;
+    overflow:hidden;
 }
 
 .bgBlack{
@@ -128,7 +135,13 @@
     flex-direction: column;
 }
 
-
 .w-100{
     width:100%;
+}
+
+figcaption{
+    color:black;
+    margin-bottom:0px;
+    width:100%;
+    font-size: 1.2em;
 }

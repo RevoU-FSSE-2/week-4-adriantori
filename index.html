@@ -21,12 +21,13 @@
             <i class="fa fa-bars"></i>
         </span>
         <ul id="burgerMenu" class="noCircle">
-            <li><a href="#registering" onClick="activeRegister()" id="register" class="navItem">Register</a></li>
-            <li><a href="#warframes" onClick="activeProfile()" id="profile" class="navItem">Warframes</a></li>
-            <li><a href="#" onClick="activeHome()" id="home" class="navItem navActive">Home</a></li>
-            <li class="navbarIcon"><a href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.png" /></a></li>
+            <div class="floatRight">
+                <li><a href="#registering" onClick="activeRegister()" id="register" class="navItem">Register</a></li>
+                <li><a href="#warframes" onClick="activeProfile()" id="profile" class="navItem">Warframes</a></li>
+                <li><a href="#" onClick="activeHome()" id="home" class="navItem navActive">Home</a></li>
+                <li class="navbarIcon"><a href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.png" /></a></li>
+            </div>
         </ul>
-
     </nav>
 
     <header id="header">
@@ -49,16 +50,39 @@
 
     <main>
         <section id="warframes">
-            <div class="warframesContainer">
-                <div class="itemVauban bgBlack w-100">
+            <div class="scroll-container">
+                <div class="warframesContainer">
+                    <div class="grid-item itemVauban">
+                        <figure>
+                            <img class="warframeImageVauban" src="/Assets/Images/VaubanPrime.png" alt="Vauban Prime">
+                            <figcaption>Vauban Prime</figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid-item itemVolt">
+                        <figure>
+                            <img src="/Assets/Images/VoltPrime.png" alt="Volt Prime">
+                            <figcaption>Volt Prime</figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid-item itemTitania">
+                        <figure>
+                            <img src="/Assets/Images/TitaniaPrime.png" alt="Titania Prime">
+                            <figcaption>Titania Prime</figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid-item itemExcalibur">
+                        <figure>
+                            <img src="/Assets/Images/ExcaliburUmbra.png" alt="Excalibur Umbra">
+                            <figcaption>Excalibur Umbra</figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid-item itemOctavia">
+                        <figure>
+                            <img src="/Assets/Images/OctaviaPrime.png" alt="Octavia Prime">
+                            <figcaption>Octavia Prime</figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div class="itemVolt bgBlack w-100">2
-                </div>
-                <div class="itemTitania bgBlack w-100">3
-                </div>
-                <div class="itemExcalibur bgBlack w-100">4
-                </div>
-                <div class="itemOctavia bgBlack w-100">5
             </div>
         </section>
 
