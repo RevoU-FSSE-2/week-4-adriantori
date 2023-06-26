@@ -2,7 +2,7 @@ let modal = document.getElementById("opening");
 
 let span = document.getElementsByClassName("close")[0];
 
-let visitor = prompt("who arth thou?");
+//let visitor = prompt("who arth thou?");
 
 if (visitor == null || visitor == "") {
     visitor = "Tenno";
@@ -50,9 +50,10 @@ function hello(){
 
 function activateBurger(){
     var burgerMenu = document.getElementById("burgerMenu");
-  if (burgerMenu.style.display === "block") {
-    burgerMenu.style.display = "none";
-  } else {
-    burgerMenu.style.display = "block";
-  }
+    if (burgerMenu.style.display === "block") {
+        burgerMenu.style.display = "none";
+    } else {
+        burgerMenu.style.display = "block";
+    }
 }
+

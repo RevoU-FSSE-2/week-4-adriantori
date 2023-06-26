@@ -1,0 +1,125 @@
+.heading{
+    color:#48A3FF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    text-align:center;
+}
+
+#opening{
+    display:none;
+    position:fixed;
+    z-index:1;
+    padding-top:150px;
+    width: 100%;
+    height: 100%;
+}
+
+.openingContent{
+    background-color:whitesmoke;
+    margin:auto;
+    padding:25px;
+    border: 2px solid #315369;
+    width:80%;
+}
+
+.close{
+    color:#6C80AC;
+    float:right;
+    font-size:24px;
+    font-weight: bold;
+}
+
+.close:hover{
+    color:#A8BFC6;
+    text-decoration: none;
+    cursor:crosshair;
+}
+
+#header{
+    width:100%;
+    height:auto;
+}
+
+.centering{
+    text-align: center;
+}
+
+.bgVideo{
+    width:100vw;
+    height:auto;
+}
+
+.bgVideo video{
+    width:100%;
+}
+
+.headerFigure img{
+    width:100%;
+    height:auto;
+}
+
+.headerGridWrapper{
+    position:absolute;
+    background-image:linear-gradient(to top, rgba(0,0,0,1), rgba(32, 25, 25, 0) );
+    width:100%;
+    padding-left:30%;
+    margin-top:-100%;
+    padding-top:65%;
+    padding-bottom:5%;
+}
+
+.itemLogo{
+    justify-self:center;
+    grid-area: logo;
+}
+
+.itemTrailer{
+    justify-self:center;
+    grid-area: trailer;
+}
+
+.itemLearn{
+    justify-self:center;
+    grid-area: learn;
+}
+
+.itemUpdate{
+    justify-self:center;
+    grid-area: update;
+}
+
+.itemUpdate a{
+    color:white;
+}
+
+.headerGrid{
+    display:grid;
+    grid-template-rows: auto;
+    max-width:40vw;
+    text-align:center;
+    align-items:center;
+    grid-template-areas: 
+    "logo logo"
+    "trailer learn"
+    "update update";
+}
+
+.headerGrid div{
+    overflow:hidden;
+}
+
+.headerGridItem a{
+    text-decoration: none;
+}
+
+.headerGridItem .navItem{
+    padding:4vh 3vw;
+}
+
+.headerGrid .bg-red{
+    background-color: rgb(252, 87, 87);
+}
+
+.headerFigure b{
+    color:white;
+}

@@ -5,10 +5,11 @@ html {
 }
 
 body{
-    background: linear-gradient(-35deg, #d8ecff, whitesmoke,#c2c1ff);
-    animation: gradient 10s ease infinite;
-    background-size: 1000% 1000%;
+    /* background: linear-gradient(-35deg, #d8ecff, whitesmoke,#c2c1ff); */
+    background-color: black;;
 	height: 100%;
+    margin:0;
+    padding:0;
 }
 
 @keyframes gradient{
