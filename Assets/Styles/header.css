@@ -1,3 +1,8 @@
+#header{
+    width:100%;
+    height:auto;
+}
+
 .heading{
     color:#48A3FF;
     font-family: 'Montserrat', sans-serif;
@@ -35,10 +40,6 @@
     cursor:crosshair;
 }
 
-#header{
-    width:100%;
-    height:auto;
-}
 
 .centering{
     text-align: center;
@@ -60,7 +61,7 @@
 
 .headerGridWrapper{
     position:absolute;
-    background-image:linear-gradient(to top, rgba(0,0,0,1), rgba(32, 25, 25, 0) );
+    background-image:linear-gradient(to top, rgba(0,0,0,1) 10%, rgba(255, 255, 255, 0) );
     width:100%;
     padding-left:30%;
     margin-top:-100%;
@@ -117,7 +118,10 @@
 }
 
 .headerGrid .bg-red{
-    background-color: rgb(252, 87, 87);
+    background-color: rgb(255, 0, 0);
+}
+.headerGrid .bg-red:hover{
+    background-color: black;
 }
 
 .headerFigure b{
