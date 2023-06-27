@@ -5,11 +5,25 @@
     position:fixed;
     top:0;
     left:0;
-    background-color: white;
+    background-color: var(--bg-color);
     z-index:1;
 }
 
 .navItem{
+    display:block;
+    color:var(--font-color);
+    background-color: var(--bg-color);
+    border:1px solid var(--font-color);
+    position:relative;
+    margin:20px 10px;
+    padding:5px;
+    width:12vw;
+    height:100%;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.navItemVanilla{
     display:block;
     color:var(--font-color);
     background-color: var(--bg-color);
@@ -55,11 +69,11 @@
 }
 
 .noCircle{
+    display:inline;
     list-style-type: none;
-    overflow: hidden;
     background-color:var(--bg-color);
     margin:0 10px;
-    vertical-align: top;
+    vertical-align: center;
 }
 
 .burger{
@@ -96,4 +110,15 @@
 
 .navbarIconImage{
     height:auto;
+}
+
+.selector{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.w-50{
+    width:50%;
+    margin-right:5vw;
 }

@@ -4,14 +4,19 @@
     }
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:1024px){
     .navbarIcon{
-        width:40%;
-        height:100%;
+        width:30%;
     }
     .navbarIconImage{
         width:100%;
-        margin-top:5%;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .navbarIconImage{
+        margin-top: 10%
     }
     .newsGrid{
         margin-top:20%;
@@ -74,6 +79,10 @@
         height:50vh;
     }
     .noCircle{
+        overflow:initial;
+        padding-right:9vw;
+        position:fixed;
+        margin:0;
     }
     .burgerIcon{
         display:inline;

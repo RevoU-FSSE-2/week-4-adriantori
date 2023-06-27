@@ -27,6 +27,12 @@
             <i class="fa fa-bars"></i>
         </span>
         <ul id="burgerMenu" class="noCircle">
+            <li>
+                <label for="toggle" class="theme-toggler settings-option" id="theme-toggler">
+                    <input type="checkbox" id="toggle" class="theme-toggler__checkbox" checked/>
+                    <span aria-hidden="true" class="theme-toggler__switch"></span>
+                </label>
+            </li>
             <li><a href="#" onClick="activeHome()" id="home" class="navItem navActive">Home</a></li>
             <li><a href="#news" onClick="activeProfile()" id="profile" class="navItem">News</a></li>
             <li><a href="#registering" onClick="activeRegister()" id="register" class="navItem">Register</a></li>
@@ -123,7 +129,7 @@
                         <label for="email">Email</label><br>
                         <input class="inputWidth" type="email" id="email" name="email" placeholder="email address"><br/>
                         
-                        <label class="itemForm">Interested in joining?</label>
+                        <label class="itemForm">Interested in joining?</label><br/>
                         <div class="labelFlex">
                             <div class="labelFlexItem">
                                 <label for="yes">Yes</label>

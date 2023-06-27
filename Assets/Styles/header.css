@@ -40,7 +40,6 @@
     cursor:crosshair;
 }
 
-
 .centering{
     text-align: center;
 }
@@ -104,10 +103,6 @@
     "logo logo"
     "trailer learn"
     "update update";
-}
-
-.headerGrid div{
-    overflow:hidden;
 }
 
 .headerGridItem a{

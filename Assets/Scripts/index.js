@@ -11,46 +11,46 @@ if (visitor == null || visitor == "") {
 }
 document.getElementById("visitor").innerText = visitor;
 
-function activeHome(){
+function activeHome() {
     document.getElementById("home").className = "navItem navActive";
     document.getElementById("profile").className = "navItem";
     document.getElementById("register").className = "navItem";
 }
-function activeProfile(){
+function activeProfile() {
     document.getElementById("home").className = "navItem";
     document.getElementById("profile").className = "navItem navActive";
     document.getElementById("register").className = "navItem";
 }
-function activeRegister(){
+function activeRegister() {
     document.getElementById("home").className = "navItem";
     document.getElementById("profile").className = "navItem";
     document.getElementById("register").className = "navItem navActive";
 }
 
-function easterEgg(){
+function easterEgg() {
     let audio = new Audio('images/sound.mp3');
     audio.play();
 }
 
-function openModal(){
+function openModal() {
     modal.style.display = "block";
 }
 
-span.onclick = function() {
-  modal.style.display = "none";
+span.onclick = function () {
+    modal.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
-      modal.style.display = "none";
+        modal.style.display = "none";
     }
 }
 
-function hello(){
+function hello() {
     alert("Hello, " + visitor);
 }
 
-function activateBurger(){
+function activateBurger() {
     var burgerMenu = document.getElementById("burgerMenu");
     if (burgerMenu.style.display === "block") {
         burgerMenu.style.display = "none";
@@ -59,8 +59,34 @@ function activateBurger(){
     }
 }
 
-setInterval(()=>{
+setInterval(() => {
     let color = changeColor.value;
     document.getElementById("wrapperForm").style.backgroundColor = color;
 }, 10);
+
+(function () {
+    var toggler = document.querySelector('.theme-toggler input[type="checkbox"]'),
+        root = document.documentElement,
+        currentTheme = localStorage.getItem('theme') || "dark";
+
+    if (currentTheme == "light") toggler.removeAttribute('checked');
+
+    else toggler.checked = "true";
+    root.setAttribute('data-theme', currentTheme);
+
+    toggler.addEventListener('change', toggleTheme, false);
+
+    function toggleTheme(e) {
+        if (this.checked) {
+            root.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+
+        else {
+            root.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+
+        }
+    }
+})();
 
