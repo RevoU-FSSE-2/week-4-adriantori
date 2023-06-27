@@ -4,13 +4,6 @@ let span = document.getElementsByClassName("close")[0];
 
 let changeColor = document.getElementById('changeColor');
 
-//let visitor = prompt("who arth thou?");
-
-if (visitor == null || visitor == "") {
-    visitor = "Tenno";
-}
-document.getElementById("visitor").innerText = visitor;
-
 function activeHome() {
     document.getElementById("home").className = "navItem navActive";
     document.getElementById("profile").className = "navItem";
@@ -25,11 +18,6 @@ function activeRegister() {
     document.getElementById("home").className = "navItem";
     document.getElementById("profile").className = "navItem";
     document.getElementById("register").className = "navItem navActive";
-}
-
-function easterEgg() {
-    let audio = new Audio('images/sound.mp3');
-    audio.play();
 }
 
 function openModal() {

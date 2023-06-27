@@ -34,8 +34,16 @@
 }
 
 @media only screen and (max-width: 425px) {
+    .loading-image {
+        position:absolute;
+        top:-20%;
+        left:-100%;
+    }
+
     .navbar{
-        height:10vh;
+        height:vh;
+        position:relative;
+        z-index:2;
     }
     .navbarIcon {
         height:auto;
@@ -72,12 +80,6 @@
     .textareaWidth{
         width:100%;
     }
-    .imgBanner{
-        height:250px;
-    }
-    #warframes{
-        height:50vh;
-    }
     .noCircle{
         overflow:initial;
         padding-right:9vw;
@@ -91,10 +93,6 @@
     #burgerMenu{
         display:none;
     }
-
-    .warframesContainer{
-        display:flex;
-    }
     .scroll-container {
         display:flex;
         overflow: auto;
@@ -103,9 +101,6 @@
     }
 
     /*header*/
-    #header{
-        margin-top:5vh;
-    }
     .headerGridWrapper{
         padding-left:0;
         margin-top:-120%;

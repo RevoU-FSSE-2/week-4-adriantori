@@ -20,6 +20,9 @@
 
 <body>
     <!-- onload="openModal()"> -->
+    <div id="loader">
+        <img class="loading-image" src="Assets/Images/loadingSpiral.jpg" alt="Loading..." />
+    </div>
 
     <nav class="navbar">
         <a class="burgerIcon" href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.png" alt="custom icon for navbar"/></a>
@@ -179,6 +182,16 @@
     <footer>
             <p>Created by Adri Antori - RevoU Week 3</p>
     </footer>
+    <script type="text/javascript">
+        document.onreadystatechange = function () {
+        if (document.readyState == "complete") {
+            setTimeout(function(){ 
+            document.getElementById('loader').style.display = 'none';
+            document.body.style.overflow = 'auto';
+            }, 2000);
+        }
+        }
+    </script>
 </body>
 
 <script src="Assets/Scripts/index.js"></script>
