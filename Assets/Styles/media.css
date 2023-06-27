@@ -12,6 +12,9 @@
         width:100%;
         margin-top: 5%;
     }
+    main{
+        margin-top:10%;
+    }
 }
 
 @media only screen and (max-width:768px){
@@ -87,6 +90,14 @@
         position:fixed;
         margin:0;
         margin-top:1vh;
+    }
+    .noCircle .navbarIcon img{
+        margin-top:0;
+        width:100%;
+    }
+    .noCircle li label .hideText{
+        display:inline;
+        margin-right: 5vw;
     }
     .burgerIcon{
         display:inline;

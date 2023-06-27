@@ -4,6 +4,13 @@ let span = document.getElementsByClassName("close")[0];
 
 let changeColor = document.getElementById('changeColor');
 
+let visitor = prompt("who arth thou?");
+
+if (visitor == null || visitor == "") {
+    visitor = "Tenno";
+}
+document.getElementById("visitor").innerText = visitor;
+
 function activeHome() {
     document.getElementById("home").className = "navItem navActive";
     document.getElementById("profile").className = "navItem";
