@@ -109,7 +109,7 @@ li a {
   
   .loading-image {
     position:absolute;
-    top:-80%;
+    top:-120%;
     left:-100%;
     width:300%;
     transform: translate(10, 25%);
