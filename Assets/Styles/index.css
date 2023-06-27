@@ -32,7 +32,9 @@ body{
     margin:0;
     padding:0;
 }
-body {overflow: hidden}
+body {
+    overflow: hidden
+}
 
 p{
     color:var(--font-color);
@@ -91,4 +93,11 @@ li a {
     100% {rotate:360deg}
   }
 
-  
+footer{
+    text-align: center;
+    margin:2vh;
+}
+
+footer p{
+    margin:0;
+}
