@@ -20,12 +20,8 @@
 }
 
 [data-theme="orokin"] {
-    --font-color: #fff;
-    --bg-color: gold;
-    --link-color: #010101;
     --font-family: orokin;
 }
-
 
 html {
     scroll-behavior: smooth;

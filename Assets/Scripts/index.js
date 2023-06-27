@@ -90,3 +90,28 @@ setInterval(() => {
     }
 })();
 
+(function () {
+    var toggler = document.querySelector('.font-toggler input[type="checkbox"]'),
+        root = document.documentElement,
+        currentFont = localStorage.getItem('font') || "orokin";
+
+    if (currentFont == "normal") toggler.removeAttribute('checked');
+
+    else toggler.checked = "true";
+    root.setAttribute('data-font', currentFont);
+
+    toggler.addEventListener('change', toggleFont, false);
+
+    function toggleFont(e) {
+        if (this.checked) {
+            root.setAttribute('data-theme', 'orokin');
+            localStorage.setItem('font', 'orokin');
+        }
+
+        else {
+            root.setAttribute('data-theme', 'normal');
+            localStorage.setItem('font', 'normal');
+
+        }
+    }
+})();
