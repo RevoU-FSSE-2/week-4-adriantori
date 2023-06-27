@@ -1,4 +1,9 @@
 /*news*/
+
+figure{
+    margin:5px;
+}
+
 .newsGridWrapper{
     margin:5%;
 }
@@ -27,12 +32,30 @@
     "giveaway resurgence";
 }
 
+.figNews img{
+    width: 100%;
+}
+
 .figNews{
-    position: absolute;
-    bottom: 35%;
+    position:relative;
+}
+
+.figNews figcaption{
+    position:absolute;
+    bottom:10%;
     left:5%;
     color:white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px black;
+    width:90%;
 }
+
+.figNews figcaption b{
+    font-weight:800;
+    margin: 5px 0;
+}
+
 /*form*/
 
 .centerItem{
@@ -51,15 +74,15 @@
     padding-bottom:5vh;
 }
 
-.wrapperForm{
+#wrapperForm{
     background-color:black;
-    color:white;
+    color: white;
     padding-top:10vh;
 }
 
 .itemForm{
     padding:none;
-    margin:none;
+    margin:10px 0;
     color:white;
 }
 

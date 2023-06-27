@@ -1,7 +1,7 @@
 .navbar{
     font-size:20px;
     overflow:hidden;
-    width:100%;
+    width:100vw;
     position:fixed;
     top:0;
     left:0;
@@ -11,9 +11,9 @@
 
 .navItem{
     display:block;
-    color:black;
-    background-color: white;
-    border:1px solid black;
+    color:var(--font-color);
+    background-color: var(--bg-color);
+    border:1px solid var(--font-color);
     position:relative;
     margin:20px 10px;
     padding:5px;
@@ -36,10 +36,10 @@
 }
 
 .navItem:hover{
-    color:white;
-    background-color:black;
+    color:var(--bg-color);
+    background-color:var(--font-color);
     transition: 0.5s ease-in;
-    border:1px solid white;
+    border:1px solid var(--font-color);
 }
 
 .navItem:hover:after{
@@ -47,25 +47,24 @@
 }
 
 .navActive{
-    color:white;
-    background-color:black;
+    color:var(--bg-color);
+    background-color: var(--font-color);
     border-radius: 7px;
-    border: 2px solid white ;
+    border: 2px solid var(--font-color) ;
     padding:5px;
 }
 
 .noCircle{
     list-style-type: none;
     overflow: hidden;
-    background-color:white;
-    margin:0;
-    display:inline-block;
+    background-color:var(--bg-color);
+    margin:0 10px;
     vertical-align: top;
 }
 
 .burger{
     display:none;
-    border:1px solid black;
+    border:1px solid var(--font-color);
     position:relative;
     align-items: center;
     margin:10px;

@@ -1,0 +1,17 @@
+body{
+    width: 100px;
+  height: 100px;
+  position: relative;
+  background-image: none;
+  animation: example 0.5s infinite;
+  
+}
+
+@keyframes example {
+    0%   {background-image:url(https://i.ibb.co/dsZtShs/frame-0-delay-0-1s.gif)}
+    20%  {background-image:url(https://i.ibb.co/Y0DLHSt/frame-1-delay-0-1s.gif)}
+    40%  {background-image:url(https://i.ibb.co/RNrhbVZ/frame-2-delay-0-1s.gif)}
+    60%  {background-image:url(https://i.ibb.co/sCnk4b9/frame-3-delay-0-1s.gif)}
+    80% {background-image:url(https://i.ibb.co/6FXcXr6/frame-4-delay-0-1s.gif)}
+    100% {background-image:url(https://i.ibb.co/1LYpxvx/frame-5-delay-0-1s.gif)}
+}

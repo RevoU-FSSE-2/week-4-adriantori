@@ -4,9 +4,33 @@
     }
 }
 
+@media only screen and (max-width:768px){
+    .navbarIcon{
+        width:40%;
+        height:100%;
+    }
+    .navbarIconImage{
+        width:100%;
+        margin-top:5%;
+    }
+    .newsGrid{
+        margin-top:20%;
+        grid-template-areas: 
+        "kullervo"
+        "giveaway"
+        "resurgence";
+    }
+    .headerFigure b{
+        font-size:0.8em;
+    }
+    .figNews figcaption{
+        text-shadow: 1px 2px black;
+    }
+}
+
 @media only screen and (max-width: 425px) {
     .navbar{
-        height:5vh;
+        height:10vh;
     }
     .navbarIcon {
         height:auto;
@@ -14,6 +38,7 @@
     }
     .navbarIconImage{
         width:75%;
+        margin:0px;
     }
     .navItem{
         width:75vw;
@@ -49,8 +74,6 @@
         height:50vh;
     }
     .noCircle{
-        overflow:initial;
-        padding-right:9vw;
     }
     .burgerIcon{
         display:inline;

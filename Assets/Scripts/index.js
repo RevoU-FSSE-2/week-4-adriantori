@@ -2,6 +2,8 @@ let modal = document.getElementById("opening");
 
 let span = document.getElementsByClassName("close")[0];
 
+let changeColor = document.getElementById('changeColor');
+
 //let visitor = prompt("who arth thou?");
 
 if (visitor == null || visitor == "") {
@@ -56,4 +58,9 @@ function activateBurger(){
         burgerMenu.style.display = "block";
     }
 }
+
+setInterval(()=>{
+    let color = changeColor.value;
+    document.getElementById("wrapperForm").style.backgroundColor = color;
+}, 10);
 

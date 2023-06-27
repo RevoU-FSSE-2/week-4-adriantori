@@ -1,4 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
+
+@font-face {
+    font-family: orokin;
+    src: url(/Assets/Fonts/orokin.ttf);
+}
+
+:root {
+    --font-color: #000;
+    --bg-color: #fff;
+    --link-color: #f1f1f1;
+    --font-family: 'Roboto', sans-serif;
+}
+
+[data-theme="dark"] {
+    --font-color: #fff;
+    --bg-color: #000;
+    --link-color: #010101;
+    --font-family: 'Roboto', sans-serif;
+}
+
+[data-theme="orokin"] {
+    --font-color: #fff;
+    --bg-color: gold;
+    --link-color: #010101;
+    --font-family: orokin;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -6,7 +33,7 @@ html {
 
 body{
     /* background: linear-gradient(-35deg, #d8ecff, whitesmoke,#c2c1ff); */
-    background-color: white;;
+    background-color: var(--bg-color);
     margin:0;
     padding:0;
 }
@@ -24,13 +51,35 @@ body{
 }
 
 p{
-    color:black;
+    color:var(--font-color);
     font-size:20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: --font-family;
     font-weight:400;
 }
 
+label{
+    font-family: var(--font-family);
+}
+
+figcaption{
+    font-family: var(--font-family);
+}
+
+.navItem{
+    font-family: var(--font-family);
+}
+
+u{
+    font-family: var(--font-family);
+}
+
+legend{
+    font-family: var(--font-family);
+}
+
 li a {
+    color:var(--link-color);
+    font-family: var(--font-family);
     text-decoration: none;
 }
 

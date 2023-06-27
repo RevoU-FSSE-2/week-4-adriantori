@@ -4,28 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="warframe.com inspired website">
+    <meta name="keywords" content="warframe, RevoU, kullervo">
+    <meta name="author" content="Adri Antori">
     <title>Week 2</title>
     <link rel="stylesheet" href="Assets/Styles/index.css">
     <link rel="stylesheet" href="Assets/Styles/navbar.css">
     <link rel="stylesheet" href="Assets/Styles/header.css">
     <link rel="stylesheet" href="Assets/Styles/main.css">
     <link rel="stylesheet" href="Assets/Styles/media.css">
+    <link rel="stylesheet" href="Assets/Styles/codepen.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
 </head>
 
 <body>
     <!-- onload="openModal()"> -->
 
     <nav class="navbar">
-        <a class="burgerIcon" href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.png" /></a>
+        <a class="burgerIcon" href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.png" alt="custom icon for navbar"/></a>
         <span class="burger" onclick="activateBurger()">
             <i class="fa fa-bars"></i>
         </span>
         <ul id="burgerMenu" class="noCircle">
             <li><a href="#" onClick="activeHome()" id="home" class="navItem navActive">Home</a></li>
-            <li><a href="#warframes" onClick="activeProfile()" id="profile" class="navItem">Warframes</a></li>
+            <li><a href="#news" onClick="activeProfile()" id="profile" class="navItem">News</a></li>
             <li><a href="#registering" onClick="activeRegister()" id="register" class="navItem">Register</a></li>
-            <li class="navbarIcon"><a href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.png" /></a></li>
+            <li class="navbarIcon"><a href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.png" alt="desktop icon for navbar"/></a></li>
         </ul>
     </nav>
 
@@ -47,7 +52,7 @@
                 <div class="headerGrid">
                     <div class="headerGridItem itemLogo">
                         <figure class="headerFigure">
-                            <img src="Assets/Images/headerLogo.png" alt="warframe the seven sins of Kullervo"> 
+                            <a href="https://www.warframe.com/news/the-seven-crimes-of-kullervo-coming-in-june"><img src="Assets/Images/headerLogo.png" alt="warframe the seven sins of Kullervo"> </a>
                             <figcaption><b>AVAILABLE NOW ON ALL PLATFORMS</b></figcaption>
                         </figure>
                     </div>
@@ -55,7 +60,7 @@
                         <a class="navItem bg-red" href="https://www.youtube.com/watch?v=mAWpM2jBw9c">WATCH TRAILER</a>
                     </div>
                     <div class="headerGridItem itemLearn">
-                        <a class="navItem" href="https://www.warframe.com/news/the-seven-crimes-of-kullervo">LEARN MORE</a>
+                        <a class="navItem" href="https://www.warframe.com/news/the-seven-crimes-of-kullervo">KULLERVO INFO</a>
                     </div>
                     <div class="headerGridItem itemUpdate">
                         <a href="https://www.warframe.com/updates"><u>View Update History</u></a>
@@ -70,39 +75,33 @@
             <div class="newsGridWrapper">
                 <div class="newsGrid">
                     <div class="newsGridItem itemKullervo">
-                        <figure>
-                            <img width="100%" src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/76bcb408b1bcfe8d60d74477fe450f97_1280x720.png" alt="kullervo warframe new update">
+                        <figure class="figNews">
+                            <img src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/76bcb408b1bcfe8d60d74477fe450f97_1280x720.png" alt="kullervo warframe new update">
                             <figcaption>
-                                <p class="figNews">
-                                    2023-06-21 <br/>
-                                    <b>The Seven Crimes of Kullervo</b> <br/>
-                                    Available Now On All Platforms <br/>
-                                </p>
+                                2023-06-21 <br/>
+                                <b>The Seven Crimes of Kullervo</b> <br/>
+                                Available Now On All Platforms <br/>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="newsGridItem itemGiveaway">
-                        <figure>
-                            <img width="100%" src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/76bcb408b1bcfe8d60d74477fe450f97_1280x720.png" alt="kullervo warframe new update">
+                        <figure class="figNews">
+                            <img src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/2015c8f293da0ef0eb0123922a6c5df6_1280x720.png" alt="steelseries giveaways on warframe website">
                             <figcaption>
-                                <p class="figNews">
-                                    2023-06-21 <br/>
-                                    <b>The Seven Crimes of Kullervo</b> <br/>
-                                    Available Now On All Platforms <br/>
-                                </p>
+                                2023-06-21<br/>
+                                <b>SteelSeries Giveaways</b><br/>
+                                Claim free in-game items and enter to win hardware!
                             </figcaption>
                         </figure>
 
                     </div>
                     <div class="newsGridItem itemResurgence">
-                        <figure>
-                            <img width="100%" src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/76bcb408b1bcfe8d60d74477fe450f97_1280x720.png" alt="kullervo warframe new update">
+                        <figure class="figNews">
+                            <img src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/e4c8a5160b2c472d2f3140774679eca1_1280x720.png" alt="inaros prime and ash prime unvaulting">
                             <figcaption>
-                                <p class="figNews">
-                                    2023-06-21 <br/>
-                                    <b>The Seven Crimes of Kullervo</b> <br/>
-                                    Available Now On All Platforms <br/>
-                                </p>
+                                2023-06-02<br/>
+                                <b>Inaros Prime and Ash Prime Resurgence</b><br/>
+                                Astonish your foes with bewildering plumes of sand and smoke!
                             </figcaption>
                         </figure>
                     </div>
@@ -110,8 +109,12 @@
             </div>
         </section>
         <section id="registering">
-            <div class="wrapperForm centerItem">
+            <div id="wrapperForm" class="centerItem">
                 <form class="paddingContent" action="#">
+
+                    <label for="changeColor">Change this background color</label>
+                    <input id="changeColor" type="color" value="#000">
+
                     <fieldset class="fieldWidth">
                         <legend>Account Information</legend>
                         <label for="fname">Full Name</label><br>
@@ -120,7 +123,7 @@
                         <label for="email">Email</label><br>
                         <input class="inputWidth" type="email" id="email" name="email" placeholder="email address"><br/>
                         
-                        <p class="itemForm">Interested in joining?</p>
+                        <label class="itemForm">Interested in joining?</label>
                         <div class="labelFlex">
                             <div class="labelFlexItem">
                                 <label for="yes">Yes</label>
@@ -135,7 +138,7 @@
                     </fieldset>
                     <fieldset class="fieldWidth">
                         <legend>Interest</legend>
-                        <p class="itemForm">What makes you interested in trying out Warframe?</p>
+                        <label class="itemForm">What makes you interested in trying out Warframe?</label>
                         <div class="labelFlex w-100">
                             <div class="labelFlexItem">
                                 <label for="parkour">Parkour</label>
@@ -151,11 +154,11 @@
                             </div>
                         </div>
 
-                        <p class="itemForm">What's your first impression of the game?</p>
-                        <textarea rows="4" class="textareaWidth"></textarea>
+                        <label for="formArea" class="itemForm">What's your first impression of the game?</label>
+                        <textarea rows="4" id="formArea" class="textareaWidth"></textarea><br/>
                         
-                        <p class="itemForm">Upload your avatar</p>
-                        <input type="file" id="photo" name="avatar" required="" accept="image/png, image/jpeg">
+                        <label for="formPhoto" class="itemForm">Upload your avatar</label><br/>
+                        <input type="file" id="formPhoto" name="avatar" required="" accept="image/png, image/jpeg">
 
                     </fieldset>
                     <input class="btnSubmit" type="submit" value="Submit" onclick="window.location.href='https://www.warframe.com/signup?referrerId=5bfe099d113ac9d7e20efff7'">
@@ -164,7 +167,7 @@
         </section>
     </main>
     <footer>
-            <p>Created by Adri Antori - RevoU Week 2</p>
+            <p>Created by Adri Antori - RevoU Week 3</p>
     </footer>
 </body>
 
