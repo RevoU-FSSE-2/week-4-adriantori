@@ -6,7 +6,7 @@
     top:0;
     left:0;
     background-color: var(--bg-color);
-    z-index:1;
+    z-index:10;
 }
 
 .navItem{
@@ -51,7 +51,6 @@
     color:var(--bg-color);
     background-color:var(--font-color);
     transition: 0.5s ease-in;
-    border:1px solid var(--font-color);
 }
 
 .navItem:hover:after{
@@ -111,7 +110,7 @@
 }
 
 .noCircle li label .hideText{
-    display:none;
+    visibility:hidden;
 }
 
 .navbarIconImage{

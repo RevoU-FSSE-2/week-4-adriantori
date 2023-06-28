@@ -40,6 +40,10 @@
     cursor:crosshair;
 }
 
+.welcomingText{
+    color:black;
+}
+
 .centering{
     text-align: center;
 }

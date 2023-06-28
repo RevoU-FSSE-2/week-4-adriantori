@@ -4,11 +4,12 @@ let span = document.getElementsByClassName("close")[0];
 
 let changeColor = document.getElementById('changeColor');
 
-let visitor = prompt("who arth thou?");
+//let visitor = prompt("who arth thou?");
 
 if (visitor == null || visitor == "") {
     visitor = "Tenno";
 }
+
 document.getElementById("visitor").innerText = visitor;
 
 function activeHome() {
@@ -51,6 +52,8 @@ function activateBurger() {
         burgerMenu.style.display = "none";
     } else {
         burgerMenu.style.display = "block";
+        burgerMenu.style.height = "100%";
+        burgerMenu.style.transition = "0.5s ease";
     }
 }
 

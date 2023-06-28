@@ -8,10 +8,12 @@
     <meta name="keywords" content="warframe, RevoU, kullervo">
     <meta name="author" content="Adri Antori">
     <title>Week 3</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Images/Icon/favicon.ico">
     <link rel="stylesheet" href="Assets/Styles/index.css">
     <link rel="stylesheet" href="Assets/Styles/navbar.css">
-    <link rel="stylesheet" href="Assets/Styles/header.css">
     <link rel="stylesheet" href="Assets/Styles/main.css">
+    <link rel="stylesheet" href="Assets/Styles/header.css">
+    <link rel="stylesheet" href="Assets/Styles/carousel.css">
     <link rel="stylesheet" href="Assets/Styles/media.css">
     <link rel="stylesheet" href="Assets/Styles/codepen.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,7 +21,6 @@
 </head>
 
 <body onload="openModal()">
-    <!-- onload="openModal()"> -->
     <div id="loader">
         <img class="loading-image" src="Assets/Images/loadingSpiral.jpg" alt="Loading..." />
     </div>
@@ -32,7 +33,7 @@
         <ul id="burgerMenu" class="noCircle">
             <li>
                 <label class="theme-toggler settings-option navItemVanilla" id="theme-toggler">
-                    <label for="toggles" class="hideText">Night and Day Toggle</label><br/>
+                    <label for="toggles" class="hideText">Light/Dark</label><br/>
                     <input type="checkbox" id="toggles" class="theme-toggler__checkbox" checked/>
                     <span aria-hidden="true" class="theme-toggler__switch"></span>
                 </label>
@@ -49,7 +50,7 @@
             <!-- Modal content -->
             <div class="openingContent">
               <span class="close">&times;</span>
-              <p>Welcome, <span id="visitor"></span> </p>
+              <p class="welcomingText">Welcome, <span id="visitor"></span> </p>
             </div>
         </slot>
         
@@ -86,7 +87,10 @@
                 <div class="newsGrid">
                     <div class="newsGridItem itemKullervo">
                         <figure class="figNews">
-                            <img src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/76bcb408b1bcfe8d60d74477fe450f97_1280x720.png" alt="kullervo warframe new update">
+                            <picture>
+                                <source srcset="Assets/Images/lowresKullervo.jpeg" media="(max-width: 425px)">
+                                <img src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/76bcb408b1bcfe8d60d74477fe450f97_1280x720.png" alt="kullervo warframe new update">
+                              </picture>
                             <figcaption>
                                 2023-06-21 <br/>
                                 <b>The Seven Crimes of Kullervo</b> <br/>
@@ -118,6 +122,30 @@
                 </div>
             </div>
         </section>
+
+        <section id="carousel">
+            <div class="carouselWrapper">
+                <span id="item-1"></span>
+                <span id="item-2"></span>
+                <span id="item-3"></span>
+
+                <div class="carousel-item item-1">
+                <a href="#item-3" class="arrow-prev arrow"></a>
+                <a href="#item-2" class="arrow-next arrow"></a>
+                </div>
+
+                <div class="carousel-item item-2">
+                <a href="#item-1" class="arrow-prev arrow"></a>
+                <a href="#item-3" class="arrow-next arrow"></a>
+                </div>
+
+                <div class="carousel-item item-3">
+                <a href="#item-2" class="arrow-prev arrow"></a>
+                <a href="#item-1" class="arrow-next arrow"></a>
+                </div>
+            </div>
+        </section>
+
         <section id="registering">
             <div id="wrapperForm" class="centerItem">
                 <form class="paddingContent" action="#">

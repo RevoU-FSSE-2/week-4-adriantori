@@ -43,11 +43,9 @@
         left:-200%;
         width:500%;
     }
-
     .navbar{
-        height:vh;
         position:relative;
-        z-index:2;
+        position:sticky;
     }
     .navbarIcon {
         height:auto;
@@ -134,12 +132,6 @@
 
     /* main */
     main {
-        margin-top:110%;
-    }
-    #warframes{
-        background-image: url("/Assets/Images/prime-access-bg.jpg");
-        background-repeat: no-repeat;
-        background-size:cover;
-        height:100%;
+        margin-top:80%;
     }
 }
