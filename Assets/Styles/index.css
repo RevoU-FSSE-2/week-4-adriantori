@@ -20,6 +20,9 @@
 }
 
 [data-theme="orokin"] {
+    --font-color: #000;
+    --bg-color: #fff;
+    --link-color: #f1f1f1;
     --font-family: orokin;
 }
 
@@ -100,4 +103,8 @@ footer{
 
 footer p{
     margin:0;
+}
+
+.fa-bars{
+    color:var(--font-color);
 }
