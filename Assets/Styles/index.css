@@ -119,6 +119,11 @@ footer p{
     margin:0;
 }
 
+footer a{
+    color:var(--font-color);
+    text-decoration: none;
+}
+
 .fa-bars{
     color:var(--font-color);
 }

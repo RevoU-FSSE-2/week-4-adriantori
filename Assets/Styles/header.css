@@ -118,11 +118,12 @@
 }
 
 .headerGrid .bg-red{
-    background-color: rgb(255, 0, 0);
+    background-color: gold;
     color:black;
 }
 .headerGrid .bg-red:hover{
     background-color: black;
+    color:white;
 }
 
 .headerFigure b{

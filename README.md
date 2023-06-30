@@ -29,7 +29,9 @@ https://musical-scone-cc855b.netlify.app
 
 ### Lighthouse Score
 Mobile:
+
 ![lighthouse score all 100 mobile](/Assets/Images/Readme/mobilePerformance.png "Lighthouse score mobile")
 
 Desktop:
+
 ![lighthouse score all 100 desktop](/Assets/Images/Readme/desktopPerformance.png "Lighthouse score desktop")
