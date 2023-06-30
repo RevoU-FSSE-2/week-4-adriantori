@@ -25,12 +25,12 @@
 }
 
 @keyframes carousel {
-  0% {background-image: url(/Assets/Images/carousel1.png);
+  0% {background-image: url(/Assets/Images/carousel1.webp);
     transition-property: width;
     transition-duration: 1s;}
-  25% {background-image: url(/Assets/Images/carousel2.png)}
-  50% {background-image: url(/Assets/Images/carousel3.png)}
-  100% {background-image: url(/Assets/Images/carousel1.png)}
+  25% {background-image: url(/Assets/Images/carousel2.webp)}
+  50% {background-image: url(/Assets/Images/carousel3.webp)}
+  100% {background-image: url(/Assets/Images/carousel1.webp)}
 } */
 
 .carousel-wrapper {
@@ -80,15 +80,15 @@
   .item-1 {
     z-index: 2;
     opacity: 1;
-    background: url('/Assets/Images/carousel1.png');
+    background: url('/Assets/Images/carousel1.webp');
     background-size: cover;
   }
   .item-2 {
-    background: url('/Assets/Images/carousel2.png');
+    background: url('/Assets/Images/carousel2.webp');
     background-size: cover;
   }
   .item-3 {
-    background: url('/Assets/Images/carousel3.png');
+    background: url('/Assets/Images/carousel3.webp');
     background-size: cover;
   }
   

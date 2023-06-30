@@ -118,8 +118,8 @@
 }
 
 .headerGrid .bg-red{
-    background-color: rgb(41, 0, 0);
-    color:white;
+    background-color: rgb(255, 0, 0);
+    color:black;
 }
 .headerGrid .bg-red:hover{
     background-color: black;

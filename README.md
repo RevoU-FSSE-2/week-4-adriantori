@@ -24,5 +24,12 @@ if Smooth Scrolling doesnt work, you can try enabling it by following [this tuto
 Media query are optimized for 1440px and 425px, with small adjustment at 1024px and 768px.
 !important is used for screen above 426px to fix Mobile's burger menu sometimes hides navbar when transitioned to larger screen size.
 
-### deploy link
+### Deploy Link
 https://musical-scone-cc855b.netlify.app
+
+### Lighthouse Score
+Mobile:
+![lighthouse score all 100 mobile](/Assets/Images/Readme/mobilePerformance.png "Lighthouse score mobile")
+
+Desktop:
+![lighthouse score all 100 desktop](/Assets/Images/Readme/desktopPerformance.png "Lighthouse score desktop")
