@@ -32,10 +32,9 @@
         </span>
         <ul id="burgerMenu" class="noCircle">
             <li>
-                <label class="theme-toggler settings-option navItemVanilla" id="theme-toggler">
-                    <label for="toggles" class="hideText">Light/Dark</label><br/>
-                    <input type="checkbox" id="toggles" class="theme-toggler__checkbox" checked/>
-                    <span aria-hidden="true" class="theme-toggler__switch"></span>
+                <label class="theme-toggler settings-option navItemVanilla" id="theme-toggler" aria-label="theme toggler">
+                    <input type="checkbox" id="toggles" class="theme-toggler__checkbox" checked  aria-label="toggle light and dark mode"/>
+                    <span aria-hidden="true" class="theme-toggler__switch" aria-label="theme toggler"></span>
                 </label>
             </li>
             <li><a href="#" onClick="activeHome()" id="home" class="navItem navActive">Home</a></li>
@@ -88,7 +87,7 @@
                     <div class="newsGridItem itemKullervo">
                         <figure class="figNews">
                             <picture>
-                                <source srcset="Assets/Images/lowresKullervo.jpeg" media="(max-width: 425px)">
+                                <source srcset="Assets/Images/kullervoSmall.webp" media="(max-width: 425px)">
                                 <img src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/76bcb408b1bcfe8d60d74477fe450f97_1280x720.png" alt="kullervo warframe new update">
                               </picture>
                             <figcaption>
@@ -130,18 +129,18 @@
                 <span id="item-3"></span>
 
                 <div class="carousel-item item-1">
-                <a href="#item-3" class="arrow-prev arrow"></a>
-                <a href="#item-2" class="arrow-next arrow"></a>
+                <a href="#item-3" class="arrow-prev arrow" aria-label="previous image"></a>
+                <a href="#item-2" class="arrow-next arrow" aria-label="next image"></a>
                 </div>
 
                 <div class="carousel-item item-2">
-                <a href="#item-1" class="arrow-prev arrow"></a>
-                <a href="#item-3" class="arrow-next arrow"></a>
+                <a href="#item-1" class="arrow-prev arrow" aria-label="previous image"></a>
+                <a href="#item-3" class="arrow-next arrow" aria-label="next image"></a>
                 </div>
 
                 <div class="carousel-item item-3">
-                <a href="#item-2" class="arrow-prev arrow"></a>
-                <a href="#item-1" class="arrow-next arrow"></a>
+                <a href="#item-2" class="arrow-prev arrow" aria-label="previous image"></a>
+                <a href="#item-1" class="arrow-next arrow" aria-label="next image"></a>
                 </div>
             </div>
         </section>
@@ -156,14 +155,13 @@
                         <input id="changeFont" type="checkbox">
                     </label>
                     
-
                     <fieldset class="fieldWidth">
                         <legend>Account Information</legend>
                         <label for="fname">Full Name</label><br>
                         <input class="inputWidth" type="text" id="fname" name="fname" placeholder="input name" required><br/>
 
                         <label for="email">Email</label><br>
-                        <input class="inputWidth" type="email" id="email" name="email" placeholder="email address" required><br/>
+                        <input class="inputWidth" type="email" id="email" name="email" placeholder="email@address.com" required><br/>
                         
                         <label class="itemForm">Interested in joining?</label><br/>
                         <div class="labelFlex">
@@ -180,7 +178,7 @@
                     </fieldset>
                     <fieldset class="fieldWidth">
                         <legend>Interest</legend>
-                        <label class="itemForm">What makes you interested in trying out Warframe?</label>
+                        <label class="itemForm">What makes you interested in trying out Warframe?<br/></label>
                         <div class="labelFlex w-100">
                             <div class="labelFlexItem">
                                 <label for="parkour">Parkour</label>
@@ -196,7 +194,7 @@
                             </div>
                         </div>
 
-                        <label for="formArea" class="itemForm">What's your first impression of the game?</label>
+                        <label for="formArea" class="itemForm">What's your first impression?</label>
                         <textarea rows="4" id="formArea" class="textareaWidth"></textarea><br/>
                         
                         <label for="formPhoto" class="itemForm">Upload your avatar</label><br/>

@@ -7,6 +7,7 @@
 @media only screen and (max-width:1024px){
     .navbarIcon{
         width:30%;
+        margin-top:1%;
     }
     .navbarIconImage{
         width:100%;
@@ -18,9 +19,10 @@
 }
 
 @media only screen and (max-width:768px){
-    .navbarIconImage{
-        margin-top: 10%
+    .navbarIcon{
+        margin-top:2.5%;
     }
+
     .newsGrid{
         margin-top:20%;
         grid-template-areas: 

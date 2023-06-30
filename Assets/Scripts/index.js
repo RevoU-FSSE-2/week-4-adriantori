@@ -4,7 +4,7 @@ let span = document.getElementsByClassName("close")[0];
 
 let changeColor = document.getElementById('changeColor');
 
-//let visitor = prompt("who arth thou?");
+let visitor = prompt("who arth thou?");
 
 if (visitor == null || visitor == "") {
     visitor = "Tenno";
@@ -102,14 +102,23 @@ setInterval(() => {
 
     function toggleFont(e) {
         if (this.checked) {
-            root.setAttribute('data-theme', 'orokin');
-            localStorage.setItem('font', 'orokin');
+            if(localStorage.getItem('theme') == 'dark'){
+                root.setAttribute('data-theme', 'orokinDark');
+                localStorage.setItem('font', 'orokin');
+            }else{
+                root.setAttribute('data-theme', 'orokinLight');
+                localStorage.setItem('font', 'orokin');
+            }
         }
 
         else {
-            root.setAttribute('data-theme', 'normal');
-            localStorage.setItem('font', 'normal');
-
+            if(localStorage.getItem('theme') == 'dark'){
+                root.setAttribute('data-theme', 'dark');
+                localStorage.setItem('font', 'normal');
+            }else{
+                root.setAttribute('data-theme', 'light');
+                localStorage.setItem('font', 'normal');
+            }
         }
     }
 })();

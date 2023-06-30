@@ -12,6 +12,13 @@
     --font-family: 'Roboto', sans-serif;
 }
 
+[data-theme="light"] {
+    --font-color: #000;
+    --bg-color: #fff;
+    --link-color: #f1f1f1;
+    --font-family: 'Roboto', sans-serif;
+}
+
 [data-theme="dark"] {
     --font-color: #fff;
     --bg-color: #000;
@@ -19,10 +26,17 @@
     --font-family: 'Roboto', sans-serif;
 }
 
-[data-theme="orokin"] {
+[data-theme="orokinLight"] {
     --font-color: #000;
     --bg-color: #fff;
     --link-color: #f1f1f1;
+    --font-family: orokin;
+}
+
+[data-theme="orokinDark"] {
+    --font-color: #fff;
+    --bg-color: #000;
+    --link-color: #010101;
     --font-family: orokin;
 }
 
