@@ -1,43 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
-
-@font-face {
-    font-family: orokin;
-    src: url(/Assets/Fonts/orokin.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
     --font-color: #000;
-    --bg-color: #fff;
+    --bg-color: #ffffff;
     --link-color: #f1f1f1;
-    --font-family: 'Roboto', sans-serif;
+    --font-family: 'Poppins', sans-serif;
 }
 
 [data-theme="light"] {
     --font-color: #000;
-    --bg-color: #fff;
+    --bg-color: #ffffff;
     --link-color: #f1f1f1;
-    --font-family: 'Roboto', sans-serif;
+    --font-family: 'Poppins', sans-serif;
 }
 
 [data-theme="dark"] {
     --font-color: #fff;
     --bg-color: #000;
     --link-color: #010101;
-    --font-family: 'Roboto', sans-serif;
-}
-
-[data-theme="orokinLight"] {
-    --font-color: #000;
-    --bg-color: #fff;
-    --link-color: #f1f1f1;
-    --font-family: orokin;
-}
-
-[data-theme="orokinDark"] {
-    --font-color: #fff;
-    --bg-color: #000;
-    --link-color: #010101;
-    --font-family: orokin;
+    --font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -45,12 +26,9 @@ html {
 }
 
 body{
-    background-color: var(--bg-color);
+    background-color: #202224;
     margin:0;
     padding:0;
-}
-body {
-    overflow: hidden
 }
 
 p{
@@ -86,6 +64,12 @@ li a {
     text-decoration: none;
 }
 
+h5{
+    font-weight: normal;
+    margin:8px;
+    font-size:0.6em;
+}
+
 #loader {
     position:absolute;
     width:100%;
@@ -116,12 +100,8 @@ footer{
 }
 
 footer p{
+    color:#f1f1f1;
     margin:0;
-}
-
-footer a{
-    color:var(--font-color);
-    text-decoration: none;
 }
 
 .fa-bars{

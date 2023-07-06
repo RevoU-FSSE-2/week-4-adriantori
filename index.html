@@ -7,8 +7,8 @@
     <meta name="description" content="warframe.com inspired website">
     <meta name="keywords" content="warframe, RevoU, kullervo">
     <meta name="author" content="Adri Antori">
-    <title>Week 3</title>
-    <link rel="icon" type="image/x-icon" href="Assets/Images/Icon/favicon.ico">
+    <title>Week 4</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Images/Icon/favicon.png">
     <link rel="stylesheet" href="Assets/Styles/index.css">
     <link rel="stylesheet" href="Assets/Styles/navbar.css">
     <link rel="stylesheet" href="Assets/Styles/main.css">
@@ -19,208 +19,137 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body onload="openModal()">
-    <div id="loader">
-        <img class="loading-image" src="Assets/Images/loadingSpiral.webp" alt="Loading..." />
-    </div>
-
+<body>
     <nav class="navbar">
-        <a class="burgerIcon" href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.webp" alt="custom icon for navbar"/></a>
+        <a class="burgerIcon" href="https://go.dev"><img class="navbarIconImage" src="/Assets/Images/logo.svg"
+                alt="custom icon for navbar" /></a>
         <span class="burger" onclick="activateBurger()">
             <i class="fa fa-bars"></i>
         </span>
         <ul id="burgerMenu" class="noCircle">
             <li>
-                <label class="theme-toggler settings-option navItemVanilla" id="theme-toggler" aria-label="theme toggler">
-                    <input type="checkbox" id="toggles" class="theme-toggler__checkbox" checked  aria-label="toggle light and dark mode"/>
+                <label class="theme-toggler settings-option navItemVanilla" id="theme-toggler"
+                    aria-label="theme toggler">
+                    <input type="checkbox" id="toggles" class="theme-toggler__checkbox" checked
+                        aria-label="toggle light and dark mode" />
                     <span aria-hidden="true" class="theme-toggler__switch" aria-label="theme toggler"></span>
                 </label>
             </li>
             <li><a href="#" onClick="activeHome()" id="home" class="navItem navActive">Home</a></li>
-            <li><a href="#news" onClick="activeProfile()" id="profile" class="navItem">News</a></li>
+            <li><a href="#possible" onClick="activePossibility()" id="possible" class="navItem">Possibility</a></li>
             <li><a href="#registering" onClick="activeRegister()" id="register" class="navItem">Register</a></li>
-            <li class="navbarIcon"><a href="https://warframe.com"><img class="navbarIconImage" src="/Assets/Images/logo.webp" alt="desktop icon for navbar"/></a></li>
+            <li class="navbarIcon"><a href="https://go.dev"><img class="navbarIconImage" src="/Assets/Images/logo.svg" alt="desktop icon for navbar" /></a></li>
         </ul>
     </nav>
 
     <header id="header">
-        <slot id="opening">
-            <!-- Modal content -->
-            <div class="openingContent">
-              <span class="close">&times;</span>
-              <p class="welcomingText">Welcome, <span id="visitor"></span> </p>
-            </div>
-        </slot>
-        
-        <!-- splash -->
-        <div class="bgVideo">
-            <video autoplay muted loop>
-                <source src="Assets/Videos/banner.webm" type="video/webm"/>
-            </video>
-            <div class="headerGridWrapper">
-                <div class="headerGrid">
-                    <div class="headerGridItem itemLogo">
-                        <figure class="headerFigure">
-                            <img src="Assets/Images/headerLogo.webp" alt="warframe the seven sins of Kullervo">
-                            <figcaption><b>AVAILABLE NOW ON ALL PLATFORMS</b></figcaption>
-                        </figure>
-                    </div>
-                    <div class="headerGridItem itemTrailer">
-                        <a class="navItem bg-red" href="https://www.youtube.com/watch?v=mAWpM2jBw9c"><b>WATCH TRAILER</b></a>
-                    </div>
-                    <div class="headerGridItem itemLearn">
-                        <a class="navItem" href="https://www.warframe.com/news/the-seven-crimes-of-kullervo"><b>KULLERVO INFO</b></a>
-                    </div>
-                    <div class="headerGridItem itemUpdate">
-                        <a href="https://www.warframe.com/updates"><u>View Update History</u></a>
-                    </div>
+        <div class="headerGridWrapper">
+            <div class="headerItemHero">
+                <h1>Build simple, secure, scalable systems with Go</h1>
+                <ul>
+                    <li>An open-source programming language supported by Google</li>
+                    <li>Easy to learn and great for teams</li>
+                    <li>Built-in concurrency and a robust standard library</li>
+                    <li>Large ecosystem of partners, communities, and tools</li>
+                </ul>
+                <div class="buttonWrapper">
+                    <div class="buttonGetStarted">Get Started</div>
+                    <div class="buttonDownload">Download</div>
                 </div>
+                <h5>Download packages for Windows 64-bit, macOS, Linux, and more</h5>
+                <h5>The go command by default downloads and authenticates modules using the Go module mirror and Go
+                    checksum database run by Google. Learn more.</h5>
+            </div>
+            <div class="headerItemGopher">
+                <img src="/Assets/Images/ladder.svg" alt="Go Gopher ladder">
             </div>
         </div>
     </header>
 
     <main>
-        <section id="news">
-            <div class="newsGridWrapper">
-                <div class="newsGrid">
-                    <div class="newsGridItem itemKullervo">
-                        <figure class="figNews">
-                            <picture>
-                                <source srcset="Assets/Images/kullervoSmall.webp" media="(max-width: 425px)">
-                                <img src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/76bcb408b1bcfe8d60d74477fe450f97_1280x720.png" alt="kullervo warframe new update">
-                              </picture>
-                            <figcaption>
-                                2023-06-21 <br/>
-                                <b>The Seven Crimes of Kullervo</b> <br/>
-                                Available Now On All Platforms <br/>
-                            </figcaption>
-                        </figure>
+        <section id="possible">
+            <h2 class="centerItem">What's possible with Go</h2>
+            <h5 class="centerItem">Use Go for a variety of software development purposes</h5>
+
+            <div class="possibilityFlex">
+                <div class="flexItem">
+                    <div class="upperText">
+                        <h3>Cloud & Network Services</h3>
+                        <p>With a strong ecosystem of tools and APIs on major cloud providers, it is easier than ever to build services with Go.</p>
                     </div>
-                    <div class="newsGridItem itemGiveaway">
-                        <figure class="figNews">
-                            <img src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/2015c8f293da0ef0eb0123922a6c5df6_1280x720.png" alt="steelseries giveaways on warframe website">
-                            <figcaption>
-                                2023-06-21<br/>
-                                <b>SteelSeries Giveaways</b><br/>
-                                Claim free in-game items and enter to win hardware!
-                            </figcaption>
-                        </figure>
-
+                    <div class="bottomText">
+                        <h4>Popular Packages:
+                            cloud.google.com/go
+                            aws/client
+                            Azure/azure-sdk-for-go</h4>
                     </div>
-                    <div class="newsGridItem itemResurgence">
-                        <figure class="figNews">
-                            <img src="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/thumbnails/e4c8a5160b2c472d2f3140774679eca1_1280x720.png" alt="inaros prime and ash prime unvaulting">
-                            <figcaption>
-                                2023-06-02<br/>
-                                <b>Inaros Prime and Ash Prime Resurgence</b><br/>
-                                Astonish your foes with bewildering plumes of sand and smoke!
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="carousel">
-            <div class="carouselWrapper">
-                <span id="item-1"></span>
-                <span id="item-2"></span>
-                <span id="item-3"></span>
-
-                <div class="carousel-item item-1">
-                <a href="#item-3" class="arrow-prev arrow" aria-label="previous image"></a>
-                <a href="#item-2" class="arrow-next arrow" aria-label="next image"></a>
-                </div>
-
-                <div class="carousel-item item-2">
-                <a href="#item-1" class="arrow-prev arrow" aria-label="previous image"></a>
-                <a href="#item-3" class="arrow-next arrow" aria-label="next image"></a>
-                </div>
-
-                <div class="carousel-item item-3">
-                <a href="#item-2" class="arrow-prev arrow" aria-label="previous image"></a>
-                <a href="#item-1" class="arrow-next arrow" aria-label="next image"></a>
                 </div>
             </div>
         </section>
 
         <section id="registering">
+            <h2 class="centerItem">What's your thoughts?</h2>
             <div id="wrapperForm" class="centerItem">
-                <form class="paddingContent" action="#">
-
-                    <label for="changeColor">Change this background color</label>
-                    <input id="changeColor" type="color" value="#000000"><br/>
-                    <label for="changeFont" class="font-toggler ">Change font to Orokin
-                        <input id="changeFont" type="checkbox">
-                    </label>
-                    
-                    <fieldset class="fieldWidth">
+                <form class="paddingContent formGrid" action="#">
+                    <fieldset class="fieldWidth itemInfo">
                         <legend>Account Information</legend>
                         <label for="fname">Full Name</label><br>
-                        <input class="inputWidth" type="text" id="fname" name="fname" placeholder="input name" required><br/>
+                        <input class="inputWidth" type="text" id="fname" name="fname" placeholder="input name"
+                            required><br />
 
                         <label for="email">Email</label><br>
-                        <input class="inputWidth" type="email" id="email" name="email" placeholder="email@address.com" required><br/>
+                        <input class="inputWidth" type="email" id="email" name="email" placeholder="email@address.com"
+                            required><br />
 
                         <label for="dob">Date of Birth</label><br>
-                        <input class="inputWidth" type="date" id="dob" name="dob"><br/>
-                        
-                        <label class="itemForm">Interested in joining?</label><br/>
-                        <div class="labelFlex">
-                            <div class="labelFlexItem">
+                        <input class="inputWidth" type="date" id="dob" name="dob"><br />
+
+                        <label>Interested in joining?</label><br />
+                        <div class="w-100 inputWidth">
+                            <div>
                                 <label for="yes">Yes</label>
                                 <input type="radio" id="yes" name="interested" value="yes">
                             </div>
-                            <div class="labelFlexItem">
+                            <div>
                                 <label for="no">No</label>
                                 <input type="radio" id="no" name="interested" value="no">
                             </div>
                         </div>
 
                     </fieldset>
-                    <fieldset class="fieldWidth">
+                    <fieldset class="fieldWidth itemInterest">
                         <legend>Interest</legend>
-                        <label class="itemForm">What makes you interested in trying out Warframe?<br/></label>
-                        <div class="labelFlex w-100">
-                            <div class="labelFlexItem">
-                                <label for="parkour">Parkour</label>
-                                <input type="checkbox" id="parkour" name="interest" value="Parkour">
+                        <label class="inputWidth">What makes you interested?<br /></label>
+                        <div class="w-100 inputWidth">
+                            <div>
+                                <label for="speed">Speed</label>
+                                <input type="checkbox" id="speed" name="interest" value="speed">
                             </div>
-                            <div class="labelFlexItem">
-                                <label for="Shooter">Shooter</label>
-                                <input type="checkbox" id="Shooter" name="interest" value="3Shooter">
+                            <div>
+                                <label for="efficiency">Efficiency</label>
+                                <input type="checkbox" id="efficiency" name="interest" value="efficiency">
                             </div>
-                            <div class="labelFlexItem">
-                                <label for="artStyle">Art Style</label>
-                                <input type="checkbox" id="artStyle" name="interest" value="artStyle">
+                            <div>
+                                <label for="jobMarket">Job Market</label>
+                                <input type="checkbox" id="jobMarket" name="interest" value="jobMarket">
                             </div>
                         </div>
 
-                        <label for="formArea" class="itemForm">What's your first impression?</label>
-                        <textarea rows="4" id="formArea" class="textareaWidth"></textarea><br/>
-                        
-                        <label for="formPhoto" class="itemForm">Upload your avatar</label><br/>
+                        <label for="formArea" class="inputWidth">What's your first impression?</label>
+                        <textarea rows="4" id="formArea" class="textareaWidth"></textarea><br />
+
+                        <label for="formPhoto" class="inputWidth">Upload your avatar</label><br />
                         <input type="file" id="formPhoto" name="avatar" accept="image/png, image/jpeg">
 
+                        <input class="btnSubmit" type="submit" value="Submit">
                     </fieldset>
-                    <input class="btnSubmit" type="submit" value="Submit" onclick="window.location.href='https://www.warframe.com/signup?referrerId=5bfe099d113ac9d7e20efff7'">
                 </form>
             </div>
         </section>
     </main>
     <footer>
-            <p>Created by Adri Antori - RevoU <a href="easter.html">Week 3</a></p>
+        <p>Created by Adri Antori - RevoU Week 4</p>
     </footer>
-    <script type="text/javascript">
-        document.onreadystatechange = function () {
-        if (document.readyState == "complete") {
-            setTimeout(function(){ 
-            document.getElementById('loader').style.display = 'none';
-            document.body.style.overflow = 'auto';
-            }, 2000);
-        }
-        }
-    </script>
 </body>
 
 <script src="Assets/Scripts/index.js"></script>

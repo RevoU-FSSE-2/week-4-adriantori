@@ -39,23 +39,14 @@
 }
 
 @media only screen and (max-width: 425px) {
-    .loading-image {
-        position:absolute;
-        top:-50%;
-        left:-200%;
-        width:500%;
-    }
     .navbar{
-        position:relative;
         position:sticky;
-    }
-    .navbarIcon {
-        height:auto;
-        display:contents;
+        display:flex;
+        justify-content: space-between;
     }
     .navbarIconImage{
-        width:75%;
-        margin:0px;
+        height:2rem;
+        margin-top:2vh;
     }
     .navItem{
         width:75vw;
@@ -70,26 +61,12 @@
     .burger{
         display:inline;
     }
-    .fieldWidth{
-        width:auto;
-    }
-    fieldset{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .inputWidth{
-        width:100%;
-    }
-    .textareaWidth{
-        width:100%;
-    }
     .noCircle{
         overflow:initial;
         padding-right:9vw;
         position:fixed;
         margin:0;
-        margin-top:1vh;
+        margin-top:10vh;
     }
     .noCircle .navbarIcon img{
         margin-top:0;
@@ -113,27 +90,35 @@
     }
 
     /*header*/
-    .headerGridWrapper{
-        padding-left:0;
-        margin-top:-120%;
-        background-image:linear-gradient(to top, rgba(0,0,0,1) 45%, rgba(255, 255, 255, 0) );
-    }
-    .headerGrid{
-        margin-top:15vh;
-        max-width:100vw;
-        grid-template-areas: 
-        "logo logo"
-        "trailer trailer" 
-        "learn learn"
-        "update update";
-    }
-    .headerGridItem .navItem{
-        padding:2vh 5vw;
-        width:80%;
-    }
+
 
     /* main */
     main {
         margin-top:80%;
+    }
+
+    /*form*/
+    .formGrid{
+        display:flex;
+        flex-direction: column;
+    }
+    .fieldWidth{
+        width:80vw;
+    }
+    fieldset{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    fieldset br{
+        display:block;
+        content:"";
+        margin-top: 0;
+    }
+    .inputWidth{
+        width:100%;
+    }
+    .textareaWidth{
+        width:100%;
     }
 }

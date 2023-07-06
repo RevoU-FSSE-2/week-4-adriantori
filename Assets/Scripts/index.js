@@ -1,49 +1,17 @@
-let modal = document.getElementById("opening");
-
-let span = document.getElementsByClassName("close")[0];
-
-let changeColor = document.getElementById('changeColor');
-
-let visitor = prompt("who arth thou?");
-
-if (visitor == null || visitor == "") {
-    visitor = "Tenno";
-}
-
-document.getElementById("visitor").innerText = visitor;
-
 function activeHome() {
     document.getElementById("home").className = "navItem navActive";
-    document.getElementById("profile").className = "navItem";
+    document.getElementById("possibility").className = "navItem";
     document.getElementById("register").className = "navItem";
 }
-function activeProfile() {
+function activePossibility() {
     document.getElementById("home").className = "navItem";
-    document.getElementById("profile").className = "navItem navActive";
+    document.getElementById("possibility").className = "navItem navActive";
     document.getElementById("register").className = "navItem";
 }
 function activeRegister() {
     document.getElementById("home").className = "navItem";
-    document.getElementById("profile").className = "navItem";
+    document.getElementById("possibility").className = "navItem";
     document.getElementById("register").className = "navItem navActive";
-}
-
-function openModal() {
-    modal.style.display = "block";
-}
-
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-function hello() {
-    alert("Hello, " + visitor);
 }
 
 function activateBurger() {
@@ -57,11 +25,7 @@ function activateBurger() {
     }
 }
 
-setInterval(() => {
-    let color = changeColor.value;
-    document.getElementById("wrapperForm").style.backgroundColor = color;
-}, 10);
-
+//set light and dark
 (function () {
     var toggler = document.querySelector('.theme-toggler input[type="checkbox"]'),
         root = document.documentElement,
@@ -84,41 +48,6 @@ setInterval(() => {
             root.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
 
-        }
-    }
-})();
-
-(function () {
-    var toggler = document.querySelector('.font-toggler input[type="checkbox"]'),
-        root = document.documentElement,
-        currentFont = localStorage.getItem('font') || "orokin";
-
-    if (currentFont == "normal") toggler.removeAttribute('checked');
-
-    else toggler.checked = "true";
-    root.setAttribute('data-font', currentFont);
-
-    toggler.addEventListener('change', toggleFont, false);
-
-    function toggleFont(e) {
-        if (this.checked) {
-            if(localStorage.getItem('theme') == 'dark'){
-                root.setAttribute('data-theme', 'orokinDark');
-                localStorage.setItem('font', 'orokin');
-            }else{
-                root.setAttribute('data-theme', 'orokinLight');
-                localStorage.setItem('font', 'orokin');
-            }
-        }
-
-        else {
-            if(localStorage.getItem('theme') == 'dark'){
-                root.setAttribute('data-theme', 'dark');
-                localStorage.setItem('font', 'normal');
-            }else{
-                root.setAttribute('data-theme', 'light');
-                localStorage.setItem('font', 'normal');
-            }
         }
     }
 })();
