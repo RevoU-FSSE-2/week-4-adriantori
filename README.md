@@ -30,6 +30,15 @@ Media query are optimized for 1440px and 425px, with small adjustment at 1024px 
 
 https://adriantori.my.id
 
+### Lighthouse Score
+Mobile:
+
+![lighthouse score all 100 mobile](/Assets/Images/Readme/mobilePerformance.png "Lighthouse score mobile")
+
+Desktop:
+
+![lighthouse score all 100 desktop](/Assets/Images/Readme/desktopPerformance.png "Lighthouse score desktop")
+
 ## Sign-up to Netlify
 
 assuming you already have GitHub account:
