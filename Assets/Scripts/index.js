@@ -57,11 +57,14 @@ function activateBurger() {
     }
 }
 
+
+//change background using color picker
 setInterval(() => {
     let color = changeColor.value;
     document.getElementById("wrapperForm").style.backgroundColor = color;
 }, 10);
 
+//set light and dark
 (function () {
     var toggler = document.querySelector('.theme-toggler input[type="checkbox"]'),
         root = document.documentElement,
@@ -88,6 +91,8 @@ setInterval(() => {
     }
 })();
 
+
+//set font based on current theme
 (function () {
     var toggler = document.querySelector('.font-toggler input[type="checkbox"]'),
         root = document.documentElement,
@@ -122,3 +127,4 @@ setInterval(() => {
         }
     }
 })();
+
